@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Leather carryall bag">
+  <rect width="900" height="675" fill="#eef5f4"/>
+  <rect x="120" y="96" width="660" height="500" rx="28" fill="#ffffff"/>
+  <path d="M310 242c8-72 55-116 140-116s132 44 140 116" fill="none" stroke="#2f4f4f" stroke-width="28" stroke-linecap="round"/>
+  <rect x="232" y="222" width="436" height="286" rx="42" fill="#9a642c"/>
+  <path d="M262 283h376v168c0 24-20 44-44 44H306c-24 0-44-20-44-44V283z" fill="#b97732"/>
+  <path d="M318 222v286M582 222v286" stroke="#6f431f" stroke-width="12" opacity=".45"/>
+  <circle cx="324" cy="292" r="16" fill="#d7b56d"/>
+  <circle cx="576" cy="292" r="16" fill="#d7b56d"/>
+  <path d="M232 364h436" stroke="#6f431f" stroke-width="10" opacity=".35"/>
+</svg>

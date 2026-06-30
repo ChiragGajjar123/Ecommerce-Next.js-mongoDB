@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Desk organizer set">
+  <rect width="900" height="675" fill="#edf7f2"/>
+  <rect x="120" y="96" width="660" height="500" rx="28" fill="#ffffff"/>
+  <rect x="230" y="218" width="440" height="290" rx="26" fill="#d8a24c"/>
+  <rect x="278" y="260" width="144" height="200" rx="18" fill="#27384a"/>
+  <rect x="448" y="260" width="174" height="70" rx="18" fill="#f3f0e7"/>
+  <rect x="448" y="358" width="174" height="102" rx="18" fill="#f3f0e7"/>
+  <path d="M320 304h60M320 348h60M320 392h60" stroke="#f8fafc" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="488" cy="295" r="14" fill="#0f766e"/>
+  <circle cx="528" cy="295" r="14" fill="#bf953f"/>
+  <circle cx="568" cy="295" r="14" fill="#b91c1c"/>
+</svg>

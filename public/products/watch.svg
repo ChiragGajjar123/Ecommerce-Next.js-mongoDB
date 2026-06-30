@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Minimal gold watch">
+  <rect width="900" height="675" fill="#eef4ff"/>
+  <rect x="120" y="96" width="660" height="500" rx="28" fill="#ffffff"/>
+  <rect x="394" y="92" width="112" height="202" rx="28" fill="#28313a"/>
+  <rect x="394" y="381" width="112" height="202" rx="28" fill="#28313a"/>
+  <circle cx="450" cy="337" r="145" fill="#bf953f"/>
+  <circle cx="450" cy="337" r="114" fill="#f8fafc"/>
+  <circle cx="450" cy="337" r="8" fill="#111827"/>
+  <path d="M450 337V260M450 337l58 42" stroke="#111827" stroke-width="10" stroke-linecap="round"/>
+  <path d="M450 224v26M450 424v26M337 337h26M537 337h26" stroke="#bf953f" stroke-width="8" stroke-linecap="round"/>
+</svg>

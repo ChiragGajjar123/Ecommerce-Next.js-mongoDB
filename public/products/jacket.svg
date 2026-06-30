@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Tailored travel jacket">
+  <rect width="900" height="675" fill="#f5f1e8"/>
+  <rect x="118" y="92" width="664" height="504" rx="28" fill="#fff"/>
+  <path d="M350 150h200l90 64v326H260V214l90-64z" fill="#31465a"/>
+  <path d="M350 150l100 148 100-148" fill="#203346"/>
+  <path d="M390 150l60 110 60-110" fill="#e6edf2"/>
+  <path d="M260 250l-58 198 58 20M640 250l58 198-58 20" fill="none" stroke="#31465a" stroke-width="54" stroke-linecap="round"/>
+  <path d="M450 298v242M318 336h82M500 336h82" stroke="#203346" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="450" cy="358" r="10" fill="#d5b56b"/>
+  <circle cx="450" cy="412" r="10" fill="#d5b56b"/>
+  <circle cx="450" cy="466" r="10" fill="#d5b56b"/>
+</svg>

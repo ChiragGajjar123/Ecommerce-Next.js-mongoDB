@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Everyday white sneaker">
+  <rect width="900" height="675" fill="#f3f4f6"/>
+  <rect x="120" y="96" width="660" height="500" rx="28" fill="#ffffff"/>
+  <path d="M226 404c80-8 138-44 178-108 50 56 116 90 198 102 44 6 78 32 94 70H218c-16-20-12-58 8-64z" fill="#f8fafc" stroke="#d5dde8" stroke-width="14"/>
+  <path d="M332 300c68 42 132 64 228 76" stroke="#0f766e" stroke-width="18" stroke-linecap="round"/>
+  <path d="M370 348l46-40M420 368l46-40M472 384l46-40" stroke="#334155" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 468h470" stroke="#bf953f" stroke-width="18" stroke-linecap="round"/>
+</svg>

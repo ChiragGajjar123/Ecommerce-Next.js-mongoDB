@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Ceramic dining set">
+  <rect width="900" height="675" fill="#f4f7fb"/>
+  <rect x="120" y="96" width="660" height="500" rx="28" fill="#ffffff"/>
+  <ellipse cx="450" cy="398" rx="235" ry="98" fill="#dbeafe"/>
+  <ellipse cx="450" cy="382" rx="196" ry="72" fill="#f8fafc" stroke="#b6c6d8" stroke-width="12"/>
+  <circle cx="450" cy="334" r="102" fill="#f8fafc" stroke="#b6c6d8" stroke-width="12"/>
+  <circle cx="450" cy="334" r="58" fill="#e0f2fe"/>
+  <path d="M588 330h58c35 0 35 64 0 64h-50" fill="none" stroke="#b6c6d8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M358 256c-18-28 18-42 0-70M426 246c-14-24 16-38 0-64M494 248c-14-24 16-38 0-64" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+</svg>
