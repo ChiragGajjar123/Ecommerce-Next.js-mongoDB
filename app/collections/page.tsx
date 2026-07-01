@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getCollections } from "@/lib/data";
 import { EmptyState } from "@/components/EmptyState";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Collections",
+  description: "Browse curated product collections. Shop by category — travel, everyday style, home goods, and more."
+};
 
 export default async function CollectionsPage() {
   const collections = await getCollections();

@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
 import { Search } from "lucide-react";
 import { getProducts } from "@/lib/data";
 import { ProductCard } from "@/components/ProductCard";
 import { EmptyState } from "@/components/EmptyState";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Shop Products",
+  description: "Browse our full catalog of premium essentials — bags, apparel, accessories, and home goods with real-time stock and fast checkout."
+};
 
 export default async function ProductsPage({
   searchParams

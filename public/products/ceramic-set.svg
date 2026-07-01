@@ -1,10 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Ceramic dining set">
-  <rect width="900" height="675" fill="#f4f7fb"/>
-  <rect x="120" y="96" width="660" height="500" rx="28" fill="#ffffff"/>
-  <ellipse cx="450" cy="398" rx="235" ry="98" fill="#dbeafe"/>
-  <ellipse cx="450" cy="382" rx="196" ry="72" fill="#f8fafc" stroke="#b6c6d8" stroke-width="12"/>
-  <circle cx="450" cy="334" r="102" fill="#f8fafc" stroke="#b6c6d8" stroke-width="12"/>
-  <circle cx="450" cy="334" r="58" fill="#e0f2fe"/>
-  <path d="M588 330h58c35 0 35 64 0 64h-50" fill="none" stroke="#b6c6d8" stroke-width="18" stroke-linecap="round"/>
-  <path d="M358 256c-18-28 18-42 0-70M426 246c-14-24 16-38 0-64M494 248c-14-24 16-38 0-64" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Ceramic dining set with plates and cups">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fafaf9"/>
+      <stop offset="100%" stop-color="#f5f0eb"/>
+    </linearGradient>
+    <radialGradient id="plateGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f4ede4"/>
+      <stop offset="100%" stop-color="#e8ddd2"/>
+    </radialGradient>
+    <radialGradient id="plateRim" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="transparent"/>
+      <stop offset="85%" stop-color="rgba(210,190,170,0.3)"/>
+      <stop offset="100%" stop-color="rgba(190,165,140,0.6)"/>
+    </radialGradient>
+    <radialGradient id="cupGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fffbf7"/>
+      <stop offset="100%" stop-color="#e8ddd2"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(0,0,0,0.1)"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.08)"/>
+    </filter>
+  </defs>
+  
+  <rect width="900" height="675" fill="url(#bg)"/>
+  <!-- Table surface hint -->
+  <rect x="0" y="430" width="900" height="245" fill="rgba(210,190,160,0.15)"/>
+  <line x1="0" y1="430" x2="900" y2="430" stroke="rgba(180,155,120,0.15)" stroke-width="2"/>
+  
+  <!-- Large dinner plate (back left) -->
+  <g filter="url(#shadow)">
+    <ellipse cx="280" cy="390" rx="188" ry="58" fill="rgba(200,180,155,0.25)"/>
+    <ellipse cx="280" cy="362" rx="188" ry="52" fill="url(#plateGrad)"/>
+    <ellipse cx="280" cy="362" rx="188" ry="52" fill="url(#plateRim)"/>
+    <!-- Plate depth -->
+    <ellipse cx="280" cy="360" rx="160" ry="44" fill="rgba(255,255,255,0.4)"/>
+    <!-- Plate inner well -->
+    <ellipse cx="280" cy="358" rx="130" ry="36" fill="rgba(255,255,255,0.6)"/>
+    <!-- Decorative band -->
+    <ellipse cx="280" cy="362" rx="175" ry="49" fill="none" stroke="rgba(180,150,115,0.4)" stroke-width="2"/>
+    <ellipse cx="280" cy="362" rx="165" ry="46" fill="none" stroke="rgba(180,150,115,0.2)" stroke-width="1"/>
+    <!-- Plate rim highlight -->
+    <ellipse cx="248" cy="338" rx="42" ry="15" fill="rgba(255,255,255,0.45)" transform="rotate(-15 248 338)"/>
+  </g>
+  
+  <!-- Medium side plate (front center) -->
+  <g filter="url(#shadow)">
+    <ellipse cx="490" cy="460" rx="155" ry="48" fill="rgba(200,180,155,0.2)"/>
+    <ellipse cx="490" cy="438" rx="155" ry="43" fill="url(#plateGrad)"/>
+    <ellipse cx="490" cy="438" rx="155" ry="43" fill="url(#plateRim)"/>
+    <ellipse cx="490" cy="436" rx="130" ry="36" fill="rgba(255,255,255,0.4)"/>
+    <ellipse cx="490" cy="434" rx="104" ry="29" fill="rgba(255,255,255,0.6)"/>
+    <ellipse cx="490" cy="438" rx="144" ry="40" fill="none" stroke="rgba(180,150,115,0.35)" stroke-width="2"/>
+    <ellipse cx="462" cy="416" rx="36" ry="13" fill="rgba(255,255,255,0.4)" transform="rotate(-15 462 416)"/>
+  </g>
+  
+  <!-- Bowl (right side) -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="690" cy="348" rx="122" ry="36" fill="rgba(200,180,155,0.2)"/>
+    <!-- Bowl side/depth -->
+    <path d="M 568 316 Q 568 400 690 420 Q 812 400 812 316 Z" fill="url(#plateGrad)"/>
+    <ellipse cx="690" cy="316" rx="122" ry="34" fill="url(#plateGrad)"/>
+    <ellipse cx="690" cy="316" rx="122" ry="34" fill="url(#plateRim)"/>
+    <!-- Bowl inner depth shadow -->
+    <ellipse cx="690" cy="330" rx="95" ry="28" fill="rgba(220,200,175,0.5)"/>
+    <ellipse cx="690" cy="338" rx="70" ry="21" fill="rgba(240,225,205,0.6)"/>
+    <!-- Bowl rim highlight -->
+    <ellipse cx="658" cy="302" rx="32" ry="12" fill="rgba(255,255,255,0.5)" transform="rotate(-15 658 302)"/>
+    <!-- Bowl foot ring -->
+    <ellipse cx="690" cy="418" rx="56" ry="10" fill="rgba(190,165,140,0.4)"/>
+  </g>
+  
+  <!-- Cup 1 (left) with handle -->
+  <g filter="url(#softShadow)">
+    <!-- Cup body -->
+    <path d="M 168 228 Q 162 330 180 360 L 280 360 Q 298 330 292 228 Z" fill="url(#cupGrad)"/>
+    <ellipse cx="230" cy="228" rx="62" ry="20" fill="url(#cupGrad)"/>
+    <!-- Cup opening shadow -->
+    <ellipse cx="230" cy="228" rx="54" ry="16" fill="rgba(200,175,145,0.4)"/>
+    <!-- Handle -->
+    <path d="M 290 270 Q 340 268 342 300 Q 340 332 290 330" fill="none" stroke="url(#cupGrad)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 290 270 Q 340 268 342 300 Q 340 332 290 330" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="10" stroke-linecap="round"/>
+    <!-- Cup base -->
+    <ellipse cx="230" cy="360" rx="48" ry="12" fill="rgba(190,165,140,0.5)"/>
+    <!-- Cup rim highlight -->
+    <ellipse cx="210" cy="220" rx="28" ry="9" fill="rgba(255,255,255,0.5)" transform="rotate(-10 210 220)"/>
+    <!-- Decorative band on cup -->
+    <path d="M 175 290 Q 172 294 180 296 L 280 296 Q 288 294 285 290 Z" fill="rgba(180,150,115,0.2)"/>
+  </g>
+  
+  <!-- Cup 2 (behind large plate) -->
+  <g filter="url(#softShadow)" opacity="0.85">
+    <path d="M 85 195 Q 79 287 96 315 L 186 315 Q 202 287 196 195 Z" fill="url(#cupGrad)"/>
+    <ellipse cx="141" cy="195" rx="56" ry="18" fill="url(#cupGrad)"/>
+    <ellipse cx="141" cy="195" rx="48" ry="14" fill="rgba(200,175,145,0.35)"/>
+    <path d="M 194 233 Q 240 230 242 260 Q 240 288 194 287" fill="none" stroke="url(#cupGrad)" stroke-width="16" stroke-linecap="round"/>
+    <ellipse cx="141" cy="315" rx="42" ry="10" fill="rgba(190,165,140,0.4)"/>
+    <ellipse cx="124" cy="188" rx="24" ry="8" fill="rgba(255,255,255,0.45)" transform="rotate(-10 124 188)"/>
+  </g>
+  
+  <!-- Saucer for cup 1 -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="230" cy="375" rx="76" ry="22" fill="rgba(200,180,155,0.2)"/>
+    <ellipse cx="230" cy="366" rx="76" ry="20" fill="url(#plateGrad)"/>
+    <ellipse cx="230" cy="366" rx="62" ry="16" fill="rgba(255,255,255,0.35)"/>
+    <ellipse cx="230" cy="366" rx="30" ry="8" fill="rgba(255,255,255,0.3)"/>
+  </g>
 </svg>

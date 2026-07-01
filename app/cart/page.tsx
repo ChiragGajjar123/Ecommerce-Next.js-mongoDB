@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Trash2 } from "lucide-react";
 import { clearCartAction, updateCartItemAction } from "@/app/actions";
@@ -9,6 +10,11 @@ import { formatMoney } from "@/lib/format";
 import { calculateCartSummary } from "@/lib/pricing";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Cart",
+  description: "Review your cart items, adjust quantities, and proceed to secure checkout."
+};
 
 export default async function CartPage() {
   const items = await getCartItems();

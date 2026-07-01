@@ -129,7 +129,7 @@ function serializeProduct(
     images: doc.images ?? [],
     collectionIds,
     collectionTitles: collectionTitles
-      ? collectionIds.map((id) => collectionTitles.get(id)).filter(Boolean)
+      ? (collectionIds.map((id) => collectionTitles.get(id)).filter(Boolean) as string[])
       : undefined,
     tags: doc.tags ?? [],
     featured: doc.featured,

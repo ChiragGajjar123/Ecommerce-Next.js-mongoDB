@@ -561,7 +561,7 @@ export async function deleteCollectionAction(formData: FormData) {
   if (id) {
     const db = await getDb();
     await db.collection("collections").deleteOne({ _id: id });
-    await db.collection("products").updateMany({}, { $pull: { collectionIds: id } });
+    await db.collection("products").updateMany({}, { $pull: { collectionIds: id } as any });
   }
   revalidatePath("/admin/collections");
   redirect("/admin/collections");

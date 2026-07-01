@@ -1,11 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Leather carryall bag">
-  <rect width="900" height="675" fill="#eef5f4"/>
-  <rect x="120" y="96" width="660" height="500" rx="28" fill="#ffffff"/>
-  <path d="M310 242c8-72 55-116 140-116s132 44 140 116" fill="none" stroke="#2f4f4f" stroke-width="28" stroke-linecap="round"/>
-  <rect x="232" y="222" width="436" height="286" rx="42" fill="#9a642c"/>
-  <path d="M262 283h376v168c0 24-20 44-44 44H306c-24 0-44-20-44-44V283z" fill="#b97732"/>
-  <path d="M318 222v286M582 222v286" stroke="#6f431f" stroke-width="12" opacity=".45"/>
-  <circle cx="324" cy="292" r="16" fill="#d7b56d"/>
-  <circle cx="576" cy="292" r="16" fill="#d7b56d"/>
-  <path d="M232 364h436" stroke="#6f431f" stroke-width="10" opacity=".35"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="Leather heritage carryall bag">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="leatherMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c2823a"/>
+      <stop offset="40%" stop-color="#a0612a"/>
+      <stop offset="100%" stop-color="#7a4518"/>
+    </linearGradient>
+    <linearGradient id="leatherTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4924c"/>
+      <stop offset="100%" stop-color="#b97732"/>
+    </linearGradient>
+    <linearGradient id="handleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6b3d16"/>
+      <stop offset="100%" stop-color="#4a2a0e"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="rgba(0,0,0,0.15)"/>
+    </filter>
+    <radialGradient id="cardHighlight" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="675" fill="url(#bg)"/>
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(16,185,129,0.06)" stroke-width="1"/>
+  </pattern>
+  <rect width="900" height="675" fill="url(#grid)"/>
+  
+  <!-- Bag body -->
+  <g filter="url(#shadow)">
+    <rect x="155" y="168" width="590" height="380" rx="36" fill="url(#leatherMain)"/>
+    <!-- Leather texture overlay -->
+    <rect x="155" y="168" width="590" height="380" rx="36" fill="url(#cardHighlight)"/>
+    <!-- Front panel -->
+    <rect x="195" y="218" width="510" height="280" rx="20" fill="url(#leatherTop)" opacity="0.85"/>
+    <!-- Center zipper line -->
+    <rect x="195" y="340" width="510" height="6" rx="3" fill="rgba(90,50,15,0.4)"/>
+    <!-- Zipper pulls -->
+    <circle cx="440" cy="343" r="10" fill="#d4a843"/>
+    <circle cx="460" cy="343" r="10" fill="#d4a843"/>
+    <!-- Stitching lines -->
+    <line x1="220" y1="240" x2="220" y2="480" stroke="rgba(180,130,70,0.4)" stroke-width="2" stroke-dasharray="8 5"/>
+    <line x1="680" y1="240" x2="680" y2="480" stroke="rgba(180,130,70,0.4)" stroke-width="2" stroke-dasharray="8 5"/>
+    <line x1="220" y1="470" x2="680" y2="470" stroke="rgba(180,130,70,0.4)" stroke-width="2" stroke-dasharray="8 5"/>
+    <!-- Buckle left -->
+    <rect x="230" y="290" width="48" height="34" rx="6" fill="#c8952c" stroke="#d4a843" stroke-width="2"/>
+    <rect x="244" y="302" width="20" height="10" rx="3" fill="#7a4518"/>
+    <!-- Buckle right -->
+    <rect x="622" y="290" width="48" height="34" rx="6" fill="#c8952c" stroke="#d4a843" stroke-width="2"/>
+    <rect x="636" y="302" width="20" height="10" rx="3" fill="#7a4518"/>
+    <!-- Brand tag -->
+    <rect x="395" y="460" width="110" height="32" rx="6" fill="#6b3d16"/>
+    <text x="450" y="481" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#d4a843">CMG</text>
+  </g>
+  
+  <!-- Handles -->
+  <path d="M 280 168 Q 280 100 340 100 Q 400 100 400 168" fill="none" stroke="url(#handleGrad)" stroke-width="26" stroke-linecap="round"/>
+  <path d="M 500 168 Q 500 100 560 100 Q 620 100 620 168" fill="none" stroke="url(#handleGrad)" stroke-width="26" stroke-linecap="round"/>
+  <!-- Handle sheen -->
+  <path d="M 290 168 Q 290 110 340 110 Q 385 110 392 168" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 510 168 Q 510 110 560 110 Q 605 110 612 168" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Bottom studs -->
+  <circle cx="225" cy="535" r="12" fill="#c8952c" stroke="#d4a843" stroke-width="2"/>
+  <circle cx="675" cy="535" r="12" fill="#c8952c" stroke="#d4a843" stroke-width="2"/>
 </svg>
